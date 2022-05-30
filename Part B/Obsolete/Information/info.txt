@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: WorkSans-Regular
+font link: https://fonts.google.com/specimen/Work+Sans
+font author: Wei Huang
+font author site: 
+
+
+icon designer: isaac claramunt
+icon designer link: /isaacclaramunt
+        
+{"bg":"#FDEEEE","icon-gradient-0":"#F00079","icon-gradient-1":"#F2A041","font":"#361414","slogan":"#4a2828"}
+      

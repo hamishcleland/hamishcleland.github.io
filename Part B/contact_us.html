@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/hamburger.js"></script>
+</head>
+<body>
+	<header>
+		<div class="HeadFlex">
+			<div class="GO2C">
+				<img src="images/default-monochrome.png" alt="GO 2 C World">
+			</div>
+			<div>
+				<a href="deal_of_the_week.html" class="button">Deal of the Week</a>
+			</div>
+		</div>
+	</header>
+	
+	<nav>
+		<div class="DesktopView">
+			<ul>
+				<li class="GO2C"><img src="images/default-monochrome.png" alt="GO 2 C World"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="serbia.html">Serbia</a></li>
+				<li><a href="belgrade.html">Belgrade</a></li>
+				<li><a href="places_to_see.html">Places to See</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li><a href="places_to_eat.html">Places to Eat</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+				<li><a href="deal_of_the_week.html" class="button">Deal of the Week</a></li>
+			</ul>
+		</div>
+		<div class="MobileView">
+			<div class="topnav">
+			<a href="index.html" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="serbia.html">Serbia</a>
+				<a href="belgrade.html">Belgrade</a>
+				<a href="places_to_see.html">Places to See</a>
+				<a href="activities.html">Activities</a>
+				<a href="places_to_eat.html">Places to Eat</a>
+				<a href="contact_us.html">Contact Us</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div class = "mainflex">
+			<div class="content_gap">
+				<h1>Get in Touch</h1>
+				<br>
+				<p>Hi, my name is Jamie and I have been working in the Travel Industry for over 20 years. During the last couple of years the only travel we have been able to do is watching videos of other people experiencing the joys of new places and new adventures.</p><br>
+				<p>My passion is helping people plan their perfect trips. I believe in the power of travel to bring people together, open minds and hearts and create lasting memories.</p><br>
+				<p>Now that the borders are open this website has been created to give you a taste of what is available out there. Although you can't book through our site we will suggest activities, places to stay and adventures to have in each of the major cities around the World. Click on their links and you will be taken to sites that we believe will assist you in making your adventure dreams come true!!</p><br>
+				<p>After all, we only live once, and there's so much to see and so much to do. Go on - get out there - Go and C the World!!</p><br>
+				<p>Want to make a booking or need further information? Our friendly team is here to help. You can fill in the form below or contact us via the details listed here. We hope to hear from you soon!</p>
+				<br>
+			</div>
+			<div>
+				<img src="images/river.jpg" alt="GO 2 C World">
+				<form method="POST" action="jaime.parker@go2c.co.nz">
+					<div class="formstyle">
+						<label for="user_name">Name<span>&#42</span>:</label>
+						<input type="text" name="user_name" id="user_name" placeholder="Your name.." required>
+					</div>
+					<div class="formstyle">
+						<label for="user_email">Email<span>&#42</span>:</label>
+						<input type="email" name="user_email" id="user_email" placeholder="Your email.." required>
+					</div>
+					<div class="formstyle">
+						<label for="user_phone">Phone<span>&#42</span>:</label>
+						<input type="number" name="user_phone" id="user_phone" placeholder="Your phone number.." required>
+					</div>
+					<div class="formstyle">
+						<label for="user_subject">Subject<span>&#42</span>:</label>
+						<textarea name="user_subject" id="user_subject" placeholder="Tell us your query!" required></textarea>
+					</div>
+					<div class="formstyle">
+						<p>Would you like to sign up to our newsletter?</p>
+						<input type="radio" name="user_response" id="user_reponse_yes" value="True" required>
+						<label for="response_yes">Yes</label>
+						
+						<input type="radio" name="user_response" id="user_reponse_no" value="False">
+						<label for="response_no">No</label>
+					</div>
+					<div class="formstyle">
+						<p>How would you like us to contact you?</p>
+						<input type="checkbox" name="contact_phone" id="contact_phone" value="true">
+						<label for="contact_phone">Phone</label>
+						
+						<input type="checkbox" name="contact_email" id="contact_email" value="true">
+						<label for="contact_email">Email</label>
+					</div>
+					<div class="formstyle">
+						<input type="submit">
+					</div>
+				</form>
+				<br>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div>
+			<h3>&copy; 2022 Cleland Web Design</h3>
+		</div>
+		<div class="DesktopView">
+			<ul class="footerscale">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="serbia.html">Serbia</a></li>
+				<li><a href="belgrade.html">Belgrade</a></li>
+				<li><a href="places_to_see.html">Places to See</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li><a href="places_to_eat.html">Places to Eat</a></li>
+				<li><a href="Contact_us.html">Contact Us</a></li>
+				<li><a href="deal_of_the_week.html" class="button">Deal of the Week</a></li>
+			</ul>
+		</div>
+		<div class="TabletView">
+			<img class="smalllogo" src="images/default-monochrome.png" alt="GO 2 C World">
+		</div>
+	</footer>
+</body>
+</html>
