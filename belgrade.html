@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>City of Belgrade</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<!-- Fonts from google, worksans -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet">
+	<!-- Code for hamburger menu -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/hamburger.js"></script>
+</head>
+<body>
+	<header>
+		<div class="HeadFlex">
+			<div class="GO2C">
+				<img src="images/default-monochrome.png" alt="GO 2 C World">
+			</div>
+			<div>
+				<a href="deal_of_the_week.html" class="button">Deal of the Week</a>
+			</div>
+		</div>
+	</header>
+	
+	<nav>
+		<div class="DesktopView">
+			<ul>
+				<li class="GO2C"><img src="images/default-monochrome.png" alt="GO 2 C World"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="serbia.html">Serbia</a></li>
+				<li><a href="belgrade.html">Belgrade</a></li>
+				<li><a href="places_to_see.html">Places to See</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li><a href="places_to_eat.html">Places to Eat</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+				<li><a href="deal_of_the_week.html" class="button">Deal of the Week</a></li>
+			</ul>
+		</div>
+		<div class="MobileView">
+			<div class="topnav">
+			<a href="index.html" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="serbia.html">Serbia</a>
+				<a href="belgrade.html">Belgrade</a>
+				<a href="places_to_see.html">Places to See</a>
+				<a href="activities.html">Activities</a>
+				<a href="places_to_eat.html">Places to Eat</a>
+				<a href="contact_us.html">Contact Us</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div class="mainflex">
+			<div class="content_gap">
+				<h1>City of Belgrade</h1>
+				<br>
+				<p>Belgrade is the capital city of the Republic of Serbia and it is divided into 17 municipalities which 10 of them are urban and 7 of them are suburban municipalities. Belgrade is one of the most populous cities in Serbia and it is the largest one. </p>
+				<br>
+				<p>The city has deep historical roots and is one of the oldest settlements in Europe, like İstanbul and Athens. Some relics found in the surrounding area date back to periods between 20,000 to 50,000 years ago, proving the ancient history of the city.</p>
+				<br>
+				<p>With its lively nightlife, tourist attractions and historic beauties, the city of Belgrade should be in your travel bucket-list. Whether you like nature or architecture, adventure or a relaxed vacation; Belgrade has something to offer.</p>
+				<br>
+			</div>
+			<div>
+				<figure>
+					<video width="1280" height="720" controls>
+						<source src="media/sava_temple.mp4" type="video/mp4">
+						<source src="media/sava_temple.webm" type="video/webm">
+						Your browser does not support this video.
+					</video>
+					<figcaption>The Saint Sava temple, one of the many numerous landmarks across Belgrade</figcaption>
+				</figure>
+				<br>
+			</div>
+		</div>
+		
+		<div class="bottommenu">
+			<div class="bottom_gap">
+				<img src="images/places_to_see.jpg" class="smallmenu" alt="Places to See">
+				<a href="places_to_see.html" class="button">Places to See</a>
+			</div>
+			<div class="bottom_gap">
+				<img src="images/bungee_jump.jpg" class="smallmenu" alt="A scary bungee jump">
+				<a href="activities.html" class="button">Activities</a>
+			</div>
+			<div class="bottom_gap">
+				<img src="images/burger.jpg" class="smallmenu" alt="A succulent burger">
+				<a href="places_to_eat.html" class="button">Places to Eat</a>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div>
+			<h3>&copy; 2022 Cleland Web Design</h3>
+		</div>
+		<div class="DesktopView">
+			<ul class="footerscale">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="serbia.html">Serbia</a></li>
+				<li><a href="belgrade.html">Belgrade</a></li>
+				<li><a href="places_to_see.html">Places to See</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li><a href="places_to_eat.html">Places to Eat</a></li>
+				<li><a href="Contact_us.html">Contact Us</a></li>
+				<li><a href="deal_of_the_week.html" class="button">Deal of the Week</a></li>
+			</ul>
+		</div>
+		<div class="TabletView">
+			<img class="smalllogo" src="images/default-monochrome.png" alt="GO 2 C World">
+		</div>
+	</footer>
+</body>
+</html>
