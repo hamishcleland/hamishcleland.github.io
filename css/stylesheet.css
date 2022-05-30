@@ -17,256 +17,304 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 
 /* == END RESET =========================================== */
 
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #FDEEEE; /* Pink */
-  font-family: 'Work Sans', sans-serif;
-  position: relative;
-}
+/* Navigation Menu */
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  border-width:1px;
-  border-bottom-style: solid;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: #F2A041;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.topnav >.active {
-  background-color: #FDEEEE; /* Pink */
-  font-family: 'Work Sans', sans-serif;
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-}
-
-.slideshowdot {
-	text-align:center;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #FDEEEE;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #9932cc;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-body,textarea,input {
-  line-height: 1.5rem;
-  font-family: 'Work Sans', sans-serif;
-}
-
-.DesktopView {
-	display:none;
-}
-
-.TabletView {
-		display: none;
+	/* Style the navigation menu */
+	.topnav {
+	  overflow: hidden;
+	  background-color: #FDEEEE; /* Pink */
+	  font-family: 'Work Sans', sans-serif;
+	  position: relative;
 	}
 
-.HeadFlex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem;
-}
-
-header {
-	 background-color: #FDEEEE;
-	 border-style: solid;
-	 border-width: 5px 0px 0px 0px;
-	 border-color: #9932cc;
-}
-
-main{
-	padding: 2rem 1.5rem;
-}
-
-h1 {
-	text-align:center;
-	font-size:3rem;
-	line-height:3rem;
-}
-
-h2 {
-	text-align:center;
-}
-
-footer {
-	background-color: #FDEEEE;
-	padding: 2rem 2rem;
-}
-
-img {
-	width: 100%;
-}
-
-
-.GO2C {
-	max-width: 50%;
-	padding:0.5rem;
-}
-
-video {
-  width: 100%;
-  height: auto;
-  max-width:36rem;
-}
-
-
-.button, input[type=submit] {
-	background-color: #F00079; /* Pink */
-	border: none;
-	color: white;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	font-size: 0.8rem;
-	cursor: pointer;
-	min-width:6rem;
-	font-family: 'Work Sans', sans-serif;
-	font-weight:200;
-	font-weight: bold;
-	line-height: 1rem;
-	max-width: 36rem;
-}
-
-figure {
-    background-color: #ededed;
-	border: 1px solid #000;
-}
-
-figcaption {
-	font-weight: bold;
-	padding: 0.5rem;
-}
-
-p,h1,h2,h3,figure,img{
-	max-width:36rem;
-	margin: auto;
-}
-
-li > a {
-	 color: grey;
-	 text-decoration: none;
-	 font-family: 'Work Sans', sans-serif;
-	 font-weight:200;
-	 font-size:1.4rem;
-	 text-align:center;
-	 padding:0.5rem 0.5rem;
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	.topnav #myLinks {
+	  display: none;
 	}
+
+	/* Style navigation menu links */
+	.topnav a {
+	  color: black;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  display: block;
+	  border-width:1px;
+	  border-bottom-style: solid;
+	}
+
+	/* Style the hamburger menu */
+	.topnav a.icon {
+	  background: #F2A041;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+
+	/* Add a grey background color on mouse-over */
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+	/* Style the active link (or home/logo) */
+	.topnav >.active {
+	  background-color: #FDEEEE; /* Pink */
+	  font-family: 'Work Sans', sans-serif;
+	}
+
+	* {box-sizing:border-box}
+
+/* JS Slideshow */
+
+	/* Slideshow container */
+	.slideshow-container {
+	  position: relative;
+	}
+
+	.slideshowdot {
+		text-align:center;
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+	  display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #FDEEEE;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #9932cc;
+	}
+
+	/* Fading animation */
+	.fade {
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+/* Hide Responsive Views */
+
+	.DesktopView {
+		display:none;
+	}
+
+	.TabletView {
+			display: none;
+		}
+
 	
-	a:hover {
-		background-color: #9932cc;
+
+/* General Colouring and Formatting */
+
+	.homepage {
+		font-family: 'Work Sans', sans-serif;
+		font-weight:200;
+		font-size:1.5rem;
+		line-height: 2rem;
+		min-width:100%;
+		min-height:35rem;
+		background-image: url("../images/homepage_mountains_crop_mobile.jpg");
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align:center;
+		display: flex;
+		justify-content: center;
+		align-items:start;
 		color:white;
+		padding-top:8rem;
 	}
 	
+	.homepagecontent > .button {
+		width:20%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:4rem;
+		font-weight: bold;
+		font-size:1rem;
+		padding:1.2rem;
+	}
+	
+	.homepagecontent > p {
+		max-width:none;
+	}
+	
+	header {
+		 background-color: #FDEEEE;
+		 border-style: solid;
+		 border-width: 5px 0px 0px 0px;
+		 border-color: #9932cc;
+	}
+
+	body,textarea,input {
+	  line-height: 1.5rem;
+	  font-family: 'Work Sans', sans-serif;
+	}
+
+	h1 {
+		text-align:center;
+		font-size:3rem;
+		line-height:3rem;
+	}
+
+	h2 {
+		text-align:center;
+	}
+
+	footer {
+		background-color: #FDEEEE;
+	}
+
+	.button, input[type=submit] {
+		background-color: #F00079; /* Pink */
+		border: none;
+		color: white;
+		padding: 1rem;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		font-size: 0.8rem;
+		cursor: pointer;
+		min-width:6rem;
+		font-family: 'Work Sans', sans-serif;
+		font-weight:200;
+		font-weight: bold;
+		line-height: 1rem;
+	}
+
+	figure {
+		background-color: #ededed;
+		border: 1px solid #000;
+	}
+
+	figcaption {
+		font-weight: bold;
+		padding: 0.5rem;
+	}
+
+	li > a {
+		 color: grey;
+		 text-decoration: none;
+		 font-family: 'Work Sans', sans-serif;
+		 font-weight:200;
+		 font-size:1.4rem;
+		 text-align:center;
+		 padding:0.5rem 0.5rem;
+		}
+		
+		a:hover {
+			background-color: #9932cc;
+			color:white;
+		}
+
+/* Responsive Code */
+
+	img {
+		width: 100%;
+	}
+
+
+	.GO2C {
+		max-width: 50%;
+		padding:0.5rem;
+	}
+
+	video {
+	  width: 100%;
+	  height: auto;
+	  max-width:36rem;
+	}
+
+	p,h1,h2,h3,figure,img{
+		max-width:36rem;
+		margin: auto;
+	}
+
+	.HeadFlex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+	}
+	
+	.smallmenu {
+	display: block;
+	}
+
+/* Padding of Sections */
+
 	.content_gap > .button{
 		margin:1rem 0rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+		
 	.bottom_gap > .button{
 		margin-bottom:0.5rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
-	.smallmenu {
-		display: block;
+
+	main {
+		padding: 2rem 1.5rem;
+	}
+
+	footer {
+		padding: 2rem 2rem;
 	}
 	
 /* Form styling */
@@ -288,57 +336,28 @@ li > a {
 		background-color: #9932cc;
 	}
 	
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+/* Chrome, Safari, Edge, Opera hide number selector in form */
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
 
-.homepage {
-	font-family: 'Work Sans', sans-serif;
-	font-weight:200;
-	font-size:1.5rem;
-	line-height: 2rem;
-	min-width:100%;
-	min-height:35rem;
-	background-image: url("../images/homepage_mountains_crop_mobile.jpg");
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align:center;
-	display: flex;
-	justify-content: center;
-	align-items:start;
-	color:white;
-	padding-top:10rem;
-}
-.homepagecontent > .button {
-	width:50%;
-	margin-left: auto;
-    margin-right: auto;
-	margin-top:2rem;
-	font-weight: bold;
-	font-size:1rem;
-	padding:0.8rem;
-}
+/* Firefox hide number selector in form */
 
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
 
 @media only screen and (min-width: 36rem) {
+	
+/* Set up grid columns */
+	
 	body {
 		display: grid;
 		grid-template-columns: auto 3fr auto;
 	}
-	
-	.slideshow-container {
-		max-width:36rem;
-		margin:auto;
-}
 	
 	header, footer, nav {
 		grid-column: 1/4;
@@ -349,6 +368,13 @@ input[type=number] {
 		margin:auto;
 	}
 	
+	.slideshow-container {
+		max-width:36rem;
+		margin:auto;
+}
+	
+/* Display responsive tablet elements */
+
 	.TabletView {
 		display: block;
 	}
@@ -390,12 +416,17 @@ input[type=number] {
 	}
 	
 	.homepage {
+		font-size:3rem;
+	}
+	
+/* Display tablet + PC homepage */
+
+	.homepage {
 	font-family: 'Work Sans', sans-serif;
 	font-weight:200;
-	font-size:3rem;
 	line-height: 2rem;
 	min-width:100%;
-	min-height:50rem;
+	min-height: 50rem;
 	background-image: url("../images/homepage_mountains_crop_desktop.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -406,10 +437,13 @@ input[type=number] {
 	align-items:center;
 	color:white;
 	}
+	
 }
 
 @media only screen and (min-width: 80rem) {
 	
+/* Display PC only responsive elements */
+
 	.MobileView {
 		display:none;
 	}
@@ -425,43 +459,8 @@ input[type=number] {
 		padding: 1rem
 	}
 	
-	nav {
-		grid-column: 1/4;
-		border-style: solid;
-		border-width: 5px 0px 0px 0px;
-		border-color: #9932cc;
-	}
-	
-	nav ul {
-		display: flex;
-		justify-content: space-around;
-		align-items:flex-end;
-		padding:1rem;
-	}
-	
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		background-color: #FDEEEE;
-	}
-	
-	
-	header {
-		display:none;
-	}
-	
-	div ul {
-		display: flex;
-	}
-	
-	footer li, nav li {
-		display: flex;
-		align-items:center;
-	}
-	
 	.content_gap {
-		padding-right:2rem;
+		padding-right:4rem;
 	}
 	
 	.bottom_gap {
@@ -484,5 +483,43 @@ input[type=number] {
 		font-size:0.8rem;
 	}
 	
+	header {
+		display:none;
+	}
 	
+	.homepage {
+		font-size:5rem;
+	}
+	
+/* Styling of nav for PC view */
+
+	nav {
+		grid-column: 1/4;
+		border-style: solid;
+		border-width: 5px 0px 0px 0px;
+		border-color: #9932cc;
+	}
+	
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+		align-items:flex-end;
+		padding:1rem;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #FDEEEE;
+	}
+	
+	div ul {
+		display: flex;
+	}
+	
+	footer li, nav li {
+		display: flex;
+		align-items:center;
+	}
 }
