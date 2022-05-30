@@ -1,87 +1,535 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="js/hamburger.js"></script>
-</head>
-<body>
-	<header>
-		<div class="HeadFlex">
-			<div class="GO2C">
-				<img src="images/default-monochrome.png" alt="GO 2 C World">
-			</div>
-			<div>
-				<a href="deal_of_the_week.html" class="button">Deal of the Week</a>
-			</div>
-		</div>
-	</header>
-	
-	<nav>
-		<div class="DesktopView">
-			<ul>
-				<li class="GO2C"><img src="images/default-monochrome.png" alt="GO 2 C World"></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="serbia.html">Serbia</a></li>
-				<li><a href="belgrade.html">Belgrade</a></li>
-				<li><a href="places_to_see.html">Places to See</a></li>
-				<li><a href="activities.html">Activities</a></li>
-				<li><a href="places_to_eat.html">Places to Eat</a></li>
-				<li><a href="contact_us.html">Contact Us</a></li>
-				<li><a href="deal_of_the_week.html" class="button">Deal of the Week</a></li>
-			</ul>
-		</div>
-		<div class="MobileView">
-			<div class="topnav">
-			<a href="index.html" class="active">Home</a>
-			<!-- Navigation links (hidden by default) -->
-			<div id="myLinks">
-				<a href="serbia.html">Serbia</a>
-				<a href="belgrade.html">Belgrade</a>
-				<a href="places_to_see.html">Places to See</a>
-				<a href="activities.html">Activities</a>
-				<a href="places_to_eat.html">Places to Eat</a>
-				<a href="contact_us.html">Contact Us</a>
-			</div>
-			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-			</div>
-		</div>
-	</nav>
+/* RESET */
 
-	<main class="homepage">
-		<div class="homepagecontent">
-			<p>Get out and see the world</p>
-			<a href="serbia.html" class="button">Learn More</a>
-		</div>
-	</main>
+/* Put headings and content in two eperate font types:sans vs sans serif
+Use google fonts to see whatfonts are available */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    /* The width of an element will be the size of its border box,
+       not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+/* == END RESET =========================================== */
+
+/* Navigation Menu */
+
+	/* Style the navigation menu */
+	.topnav {
+	  overflow: hidden;
+	  background-color: #FDEEEE; /* Pink */
+	  font-family: 'Work Sans', sans-serif;
+	  position: relative;
+	}
+
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	.topnav #myLinks {
+	  display: none;
+	}
+
+	/* Style navigation menu links */
+	.topnav a {
+	  color: black;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  display: block;
+	  border-width:1px;
+	  border-bottom-style: solid;
+	}
+
+	/* Style the hamburger menu */
+	.topnav a.icon {
+	  background: #F2A041;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+
+	/* Add a grey background color on mouse-over */
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+	/* Style the active link (or home/logo) */
+	.topnav >.active {
+	  background-color: #FDEEEE; /* Pink */
+	  font-family: 'Work Sans', sans-serif;
+	}
+
+	* {box-sizing:border-box}
+
+/* JS Slideshow */
+
+	/* Slideshow container */
+	.slideshow-container {
+	  position: relative;
+	}
+
+	.slideshowdot {
+		text-align:center;
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+	  display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #FDEEEE;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #9932cc;
+	}
+
+	/* Fading animation */
+	.fade {
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+/* Hide Responsive Views */
+
+	.DesktopView {
+		display:none;
+	}
+
+	.TabletView {
+			display: none;
+		}
+
 	
-	<footer>
-		<div>
-			<h3>&copy; 2022 Cleland Web Design</h3>
-		</div>
-		<div class="DesktopView">
-			<ul class="footerscale">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="serbia.html">Serbia</a></li>
-				<li><a href="belgrade.html">Belgrade</a></li>
-				<li><a href="places_to_see.html">Places to See</a></li>
-				<li><a href="activities.html">Activities</a></li>
-				<li><a href="places_to_eat.html">Places to Eat</a></li>
-				<li><a href="Contact_us.html">Contact Us</a></li>
-				<li><a href="deal_of_the_week.html" class="button">Deal of the Week</a></li>
-			</ul>
-		</div>
-		<div class="TabletView">
-			<img class="smalllogo" src="images/default-monochrome.png" alt="GO 2 C World">
-		</div>
-	</footer>
-</body>
-</html>
+
+/* General Colouring and Formatting */
+
+	.homepage {
+		font-family: 'Work Sans', sans-serif;
+		font-weight:200;
+		font-size:2rem;
+		line-height: 2rem;
+		min-width:100%;
+		min-height:35rem;
+		background-image: url("../images/homepage_mountains_crop_mobile.jpg");
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align:center;
+		display: flex;
+		justify-content: center;
+		align-items:start;
+		color:white;
+		padding-top:8rem;
+	}
+	
+	.homepagecontent > .button {
+		width:50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:2rem;
+		font-weight: bold;
+		font-size:1rem;
+		padding:1.2rem;
+	}
+	
+	.homepagecontent > p {
+		max-width:none;
+	}
+	
+	header {
+		 background-color: #FDEEEE;
+		 border-style: solid;
+		 border-width: 5px 0px 0px 0px;
+		 border-color: #9932cc;
+	}
+
+	body,textarea,input {
+	  line-height: 1.5rem;
+	  font-family: 'Work Sans', sans-serif;
+	}
+
+	h1 {
+		text-align:center;
+		font-size:3rem;
+		line-height:3rem;
+	}
+
+	h2 {
+		text-align:center;
+	}
+
+	footer {
+		background-color: #FDEEEE;
+	}
+
+	.button, input[type=submit] {
+		background-color: #F00079; /* Pink */
+		border: none;
+		color: white;
+		padding: 1rem;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		font-size: 0.8rem;
+		cursor: pointer;
+		min-width:6rem;
+		font-family: 'Work Sans', sans-serif;
+		font-weight:200;
+		font-weight: bold;
+		line-height: 1rem;
+	}
+
+	figure {
+		background-color: #ededed;
+		border: 1px solid #000;
+	}
+
+	figcaption {
+		font-weight: bold;
+		padding: 0.5rem;
+	}
+
+	li > a {
+		 color: grey;
+		 text-decoration: none;
+		 font-family: 'Work Sans', sans-serif;
+		 font-weight:200;
+		 font-size:1.4rem;
+		 text-align:center;
+		 padding:0.5rem 0.5rem;
+		}
+		
+		a:hover {
+			background-color: #9932cc;
+			color:white;
+		}
+
+/* Responsive Code */
+
+	img {
+		width: 100%;
+	}
+
+
+	.GO2C {
+		max-width: 50%;
+		padding:0.5rem;
+	}
+
+	video {
+	  width: 100%;
+	  height: auto;
+	  max-width:36rem;
+	}
+
+	p,h1,h2,h3,figure,img{
+		max-width:36rem;
+		margin: auto;
+	}
+
+	.HeadFlex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+	}
+	
+	.smallmenu {
+	display: block;
+	}
+
+/* Padding of Sections */
+
+	.content_gap > .button{
+		margin:1rem 0rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		
+	.bottom_gap > .button{
+		margin-bottom:0.5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	main {
+		padding: 2rem 1.5rem;
+	}
+
+	footer {
+		padding: 2rem 2rem;
+	}
+	
+/* Form styling */
+	
+	.formstyle {
+	padding:0.5rem;
+	}
+	
+	input[type=text], input[type=email], input[type=number],textarea {
+		padding:1rem;
+		width:100%;
+	}
+	
+	input[type=submit] {
+		cursor: pointer;
+	}
+	
+	input[type=submit]:hover{
+		background-color: #9932cc;
+	}
+	
+/* Chrome, Safari, Edge, Opera hide number selector in form */
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+/* Firefox hide number selector in form */
+
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
+
+@media only screen and (min-width: 36rem) {
+	
+/* Set up grid columns */
+	
+	body {
+		display: grid;
+		grid-template-columns: auto 3fr auto;
+	}
+	
+	header, footer, nav {
+		grid-column: 1/4;
+	}
+	
+	main{
+		grid-column: 2/3;
+		margin:auto;
+	}
+	
+	.slideshow-container {
+		max-width:36rem;
+		margin:auto;
+}
+	
+/* Display responsive tablet elements */
+
+	.TabletView {
+		display: block;
+	}
+	
+	.smalllogo {
+		float: right;
+		max-width:70%
+	}
+	
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		padding:1rem;
+	}
+	
+	.smallmenu {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.bottommenu {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	
+	.content_gap > .button {
+		width:10rem;
+	}
+	
+	.bottom_gap {
+		padding-right:1rem;
+	}
+	
+	.smallmenu {
+		width:10rem;
+	}
+	
+	.homepage {
+		font-size:3rem;
+	}
+	
+/* Display tablet + PC homepage */
+
+	.homepage {
+	font-family: 'Work Sans', sans-serif;
+	font-weight:200;
+	line-height: 2rem;
+	min-width:100%;
+	min-height: 34rem;
+	background-image: url("../images/homepage_mountains_crop_desktop.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	color:white;
+	}
+	
+	.homepagecontent > .button {
+		width:30%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:4rem;
+		font-weight: bold;
+		font-size:1rem;
+		padding:1.2rem;
+	}
+}
+
+@media only screen and (min-width: 80rem) {
+	
+/* Display PC only responsive elements */
+
+	.MobileView {
+		display:none;
+	}
+
+	.DesktopView {
+		display:block;
+	}
+	
+	.mainflex {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 1rem
+	}
+	
+	.content_gap {
+		padding-right:4rem;
+	}
+	
+	.bottom_gap {
+		padding-right:2rem;
+	}
+	
+	.content_gap > .button {
+		width:20rem;
+	}
+	
+	.smallmenu {
+		width:20rem;
+	}
+	
+	.footerscale a{
+		font-size:1.1em;
+	}
+	
+	footer .button {
+		font-size:0.8rem;
+	}
+	
+	header {
+		display:none;
+	}
+	
+	.homepage {
+		font-size:5rem;
+		min-height: 50rem;
+	}
+	
+/* Styling of nav for PC view */
+
+	nav {
+		grid-column: 1/4;
+		border-style: solid;
+		border-width: 5px 0px 0px 0px;
+		border-color: #9932cc;
+	}
+	
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+		align-items:flex-end;
+		padding:1rem;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #FDEEEE;
+	}
+	
+	div ul {
+		display: flex;
+	}
+	
+	footer li, nav li {
+		display: flex;
+		align-items:center;
+	}
+}
