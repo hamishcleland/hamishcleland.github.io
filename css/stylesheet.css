@@ -180,10 +180,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 	}
 	
 	.homepagecontent > .button {
-		width:20%;
+		width:50%;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top:4rem;
+		margin-top:2rem;
 		font-weight: bold;
 		font-size:1rem;
 		padding:1.2rem;
@@ -426,7 +426,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 	font-weight:200;
 	line-height: 2rem;
 	min-width:100%;
-	min-height: 50rem;
+	min-height: 34rem;
 	background-image: url("../images/homepage_mountains_crop_desktop.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -438,6 +438,15 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 	color:white;
 	}
 	
+	.homepagecontent > .button {
+		width:30%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:4rem;
+		font-weight: bold;
+		font-size:1rem;
+		padding:1.2rem;
+	}
 }
 
 @media only screen and (min-width: 80rem) {
@@ -489,6 +498,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 	
 	.homepage {
 		font-size:5rem;
+		min-height: 50rem;
 	}
 	
 /* Styling of nav for PC view */
