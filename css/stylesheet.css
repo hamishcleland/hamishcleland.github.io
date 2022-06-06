@@ -45,7 +45,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 
 	/* Style the hamburger menu */
 	.topnav a.icon {
-	  background: #F2A041;
+	  background: #FDEEEE;
 	  display: block;
 	  position: absolute;
 	  right: 0;
@@ -163,7 +163,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 	.homepage {
 		font-family: 'Work Sans', sans-serif;
 		font-weight:200;
-		font-size:1.5rem;
+		font-size:2rem;
 		line-height: 2rem;
 		min-width:100%;
 		min-height:35rem;
@@ -256,10 +256,25 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 		 padding:0.5rem 0.5rem;
 		}
 		
-		a:hover {
-			background-color: #9932cc;
-			color:white;
-		}
+	a:hover {
+		background-color: #9932cc;
+		color:white;
+	}
+	
+	.dealcaption {
+		font-weight:bold;
+		padding:1rem;
+		text-align:center;
+		background-color: #F2A041;
+		color: white;
+		font-size:0.85rem;
+	}
+	
+	.bold {
+		font-size:2rem;
+		line-height:2.5rem;
+	}
+
 
 /* Responsive Code */
 
@@ -416,26 +431,30 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 	}
 	
 	.homepage {
-		font-size:3rem;
+		font-size:2.7rem;
+	}
+	
+	.dealcaption {
+		font-size:1rem;
 	}
 	
 /* Display tablet + PC homepage */
 
 	.homepage {
-	font-family: 'Work Sans', sans-serif;
-	font-weight:200;
-	line-height: 2rem;
-	min-width:100%;
-	min-height: 34rem;
-	background-image: url("../images/homepage_mountains_crop_desktop.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align:center;
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	color:white;
+		font-family: 'Work Sans', sans-serif;
+		font-weight:200;
+		line-height: 2rem;
+		min-width:100%;
+		min-height: 34rem;
+		background-image: url("../images/homepage_mountains_crop_desktop.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align:center;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		color:white;
 	}
 	
 	.homepagecontent > .button {
